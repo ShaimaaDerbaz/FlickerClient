@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FlickerClient</string>
+    <string name="popular_images">Popular Images</string>
+</resources>
