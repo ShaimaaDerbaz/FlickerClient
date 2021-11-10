@@ -20,14 +20,6 @@ class FlickerApi (private  var retrofit : Retrofit) {
         return api.getPopularImages(apiKey,photosPerPage,pageNumber,format,jsonCallback)
     }
 
-    fun getRecentImages(  apiKey: String?,
-                           photosPerPage: Int,
-                           pageNumber: Int,
-                           format: String?,
-                           jsonCallback: Int): Observable<BaseResponse?>? {
-        val api = retrofit.create(Api::class.java)
-        return api.getRecentImages(apiKey,photosPerPage,pageNumber,format,jsonCallback)
-    }
 
 
     interface Api
@@ -42,14 +34,7 @@ class FlickerApi (private  var retrofit : Retrofit) {
             @Query("nojsoncallback") jsonCallback: Int
         ): Observable<BaseResponse>
 
-        @GET("/services/rest/?method="+"flickr.photos.getRecent")
-        fun getRecentImages(
-            @Query("api_key") apiKey: String?,
-            @Query("per_page") photosPerPage: Int,
-            @Query("page") pageNumber: Int,
-            @Query("format") format: String?,
-            @Query("nojsoncallback") jsonCallback: Int
-        ): Observable<BaseResponse?>?
+
     }
 
 }

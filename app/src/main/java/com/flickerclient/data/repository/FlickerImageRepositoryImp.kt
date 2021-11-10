@@ -47,21 +47,4 @@ class FlickerImageRepositoryImp(
         return dataObservable
     }
 
-    override fun getRecentImages(
-        apiKey: String?,
-        photosPerPage: Int,
-        pageNumber: Int,
-        format: String?,
-        jsonCallback: Int
-    ): Observable<List<FlickrImage>?>? {
-        //TODO : if local or remote check and switch
-        return remoteFlickerImageData.getRecentImagesFromServer(
-            apiKey,
-            photosPerPage,
-            pageNumber,
-            format,
-            jsonCallback
-        )
-
-    }
 }

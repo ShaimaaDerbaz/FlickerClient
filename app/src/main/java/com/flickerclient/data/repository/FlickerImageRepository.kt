@@ -14,11 +14,4 @@ interface FlickerImageRepository {
         jsonCallback: Int
     ): Observable<List<FlickrImage>>
 
-    fun getRecentImages(
-        apiKey: String?,
-        photosPerPage: Int,
-        pageNumber: Int,
-        format: String?,
-        jsonCallback: Int
-    ): Observable<List<FlickrImage>?>?
 }
