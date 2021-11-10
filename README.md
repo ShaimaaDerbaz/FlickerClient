@@ -18,6 +18,8 @@ After you download the project please connect to Internet to get URLs Data
 
 5- Retrofit for networking 
 
+6- Worker
+
 
 ## language :
 
@@ -26,13 +28,9 @@ Kotlin
 
 ##
 
-I’m following clean code architecture,I use MVP design Pattern 
+-code architecture used : MVP , Repository 
 
-i used Singleaton and repository design pattens 
-
-XML file apply Snake Case convention.
- 
-###XML example ViewType_ViewItemName 
+-Used Service Locator for providing the dependency 
 
 
 ## Note
