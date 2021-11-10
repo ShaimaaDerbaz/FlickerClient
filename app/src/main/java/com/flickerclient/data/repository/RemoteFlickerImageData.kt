@@ -22,18 +22,5 @@ class RemoteFlickerImageData  (private var flickerApi: FlickerApi){
         return imagesPopualerObservable
     }
 
-    fun getRecentImagesFromServer(apiKey: String?,
-                                   photosPerPage: Int,
-                                   pageNumber: Int,
-                                   format: String?,
-                                   jsonCallback: Int ): Observable<List<FlickrImage>?>?
-    {
-        var imagesRecentObservable =flickerApi.getRecentImages(apiKey,photosPerPage,
-            pageNumber,format,jsonCallback)?.map {
-            t: BaseResponse ->  t.photos.flickrImages
 
-        }
-
-        return imagesRecentObservable
-    }
 }
