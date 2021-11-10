@@ -28,6 +28,13 @@ Kotlin
 
 I’m following clean code architecture,I use MVP design Pattern 
 
-XML file apply SnakeCase convention.
+i used Singleaton and repository design pattens 
+
+XML file apply Snake Case convention.
  
 ###XML example ViewType_ViewItemName 
+
+
+## Note
+
+I used Observable type for using it in future in pagination but it take me long time to implemet so i didnt use it in pagination
