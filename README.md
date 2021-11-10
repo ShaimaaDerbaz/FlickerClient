@@ -1,10 +1,6 @@
 "# inmoblyTask" 
 "# inmobly" 
 
-A simple Activity to show brands and categories
-
-After you download the project please connect to Internet to get URLs Data 
-
 
 ## Dependencies / Third part liberaries :
 
