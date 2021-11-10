@@ -35,7 +35,6 @@ class PopularImagesAdapter(
         Picasso.with(context)
             .load(imageUrl)
             .transform(transformation)
-            //.fallback(R.drawable.bg_circle_cat)
             .into(holder.binding.ivIamge)
 
         holder.binding.tvTitle.text = flickerImages.get(position).title

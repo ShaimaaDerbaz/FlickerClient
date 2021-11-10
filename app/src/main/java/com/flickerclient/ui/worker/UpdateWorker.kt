@@ -14,10 +14,6 @@ class UpdateWorker(
     workerParams: WorkerParameters
 ) : Worker(context, workerParams) {
 
-    /*private val MINIMUM_REPEAT_INTERVAL = 15 * 60
-    private val uniqueWorkName = "com.flickerclient.ui.worker.update_worker"
-    private var repeatIntervalSec = MINIMUM_REPEAT_INTERVAL.toLong()*/
-    private val flexIntervalSec = 5 * 60.toLong()
 
     var context: Context? = null
 
